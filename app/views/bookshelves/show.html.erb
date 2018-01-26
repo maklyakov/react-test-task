@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @bookshelf.title %>
+</p>
+
+<%= link_to 'Edit', edit_bookshelf_path(@bookshelf) %> |
+<%= link_to 'Back', bookshelves_path %>
