@@ -2,9 +2,9 @@
 
 Objective:
 ----------
-Create a front-end CRUD application to manage books on a bookshelf.
+Create a front-end CRUD application to manage books on a bookshelf, using this application as the back-end.
 
-The application is deployed and ready to access at the following base URL:
+The application is deployed, wth the API endpoints ready to access at the following base URL:
 https://react-test-globacap.herokuapp.com/
 
 Application entities:
