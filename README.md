@@ -7,6 +7,10 @@ Create a front-end CRUD application to manage books on a bookshelf, using this a
 The application is deployed, wth the API endpoints ready to access at the following base URL:
 https://react-test-globacap.herokuapp.com/
 
+We would especially like to see your approach to coding, use of any stylesheet languages such as Sass or LESS, or anything else you think is relevant.
+
+This test should take up to 2 hours.
+
 Application entities:
 ------------------------------------
 - Bookshelves and Books
