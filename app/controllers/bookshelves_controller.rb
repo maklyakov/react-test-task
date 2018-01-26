@@ -1,4 +1,7 @@
 class BookshelvesController < ApplicationController
+  include Authorization
+
+  before_action :authorize_the_api
   before_action :set_bookshelf, only: [:show, :edit, :update, :destroy]
 
   # GET /bookshelves

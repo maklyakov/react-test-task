@@ -7,7 +7,7 @@ class LoginController < ApplicationController
     if params[:user] == 'ReactTestGlobacap' && params[:password] == 'ReactTestGlobacap123'
       render json: {authorization_token: authorization_token}
     else
-	  render status: 401, json: {}
+      render status: 401, json: {"status": "invalid pwd/user combination"}
     end
   end
 end
