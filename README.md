@@ -7,6 +7,7 @@ The application serves two entities:
 
 It has these API endpoint:
 --------------------------
+<code>
 GET    /books(.:format)
 POST   /books(.:format)
 GET    /books/new(.:format)
@@ -24,7 +25,8 @@ PATCH  /bookshelves/:id(.:format)
 PUT    /bookshelves/:id(.:format)
 DELETE /bookshelves/:id(.:format)
 GET    /login(.:format)
+</code>
 
 Each of the above API endpoints require a token for authenticating the current user.
 That authentication token can be retrieved by calling the /login API endpoint by passing a user/pwd:
-'ReactTestGlobacap'/'ReactTestGlobacap123'
+<pre>'ReactTestGlobacap'/'ReactTestGlobacap123'</pre>
