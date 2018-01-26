@@ -1,11 +1,18 @@
-# A RoR application for testing the React candidates.
+# This is a test for front-end developers
 
-The application serves two entities:
+Objective:
+----------
+Create a front-end CRUD application to manage books on a bookshelf.
+
+The application is deployed and ready to access at the following base URL:
+https://react-test-globacap.herokuapp.com/
+
+Application entities:
 ------------------------------------
--Bookshelves and Books.
--A bookshelf has many books.
+- Bookshelves and Books
+- A bookshelf has many books
 
-It has these API endpoint:
+API endpoints:
 --------------------------
 <pre>
 <code>
@@ -29,6 +36,11 @@ GET    /login(.:format)
 </code>
 </pre>
 
+Authentication:
+---------------
 Each of the above API endpoints require a token for authenticating the current user.
 That authentication token can be retrieved by calling the /login API endpoint by passing a user/pwd:
 <pre>'ReactTestGlobacap'/'ReactTestGlobacap123'</pre>
+
+For example:
+https://react-test-globacap.herokuapp.com/login.json?user=ReactTestGlobacap&password=ReactTestGlobacap123
