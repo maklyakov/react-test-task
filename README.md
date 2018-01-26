@@ -10,7 +10,7 @@ https://react-test-globacap.herokuapp.com/
 Application entities:
 ------------------------------------
 - Bookshelves and Books
-- A bookshelf has many books
+- A Bookshelf has many Books
 
 API endpoints:
 --------------------------
