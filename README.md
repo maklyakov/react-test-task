@@ -7,6 +7,7 @@ The application serves two entities:
 
 It has these API endpoint:
 --------------------------
+<pre>
 <code>
 GET    /books(.:format)
 POST   /books(.:format)
@@ -26,6 +27,7 @@ PUT    /bookshelves/:id(.:format)
 DELETE /bookshelves/:id(.:format)
 GET    /login(.:format)
 </code>
+</pre>
 
 Each of the above API endpoints require a token for authenticating the current user.
 That authentication token can be retrieved by calling the /login API endpoint by passing a user/pwd:
