@@ -11,7 +11,7 @@ We would especially like to see your approach to coding, use of any stylesheet l
 
 This test should take around 2 hours.
 
-Send us a link in Github and/or a working deployed version.
+Send us a link in Github and/or a working deployed version of your front-end application.
 
 Application entities:
 ------------------------------------
