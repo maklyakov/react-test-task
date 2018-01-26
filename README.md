@@ -1,4 +1,4 @@
-# This is a test for front-end developers
+# Front-end developer test
 
 Objective:
 ----------
@@ -10,6 +10,8 @@ https://react-test-globacap.herokuapp.com/
 We would especially like to see your approach to coding, use of any stylesheet languages such as Sass or LESS, or anything else you think is relevant.
 
 This test should take around 2 hours.
+
+Send us a link in Github and/or a working deployed version.
 
 Application entities:
 ------------------------------------
