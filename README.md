@@ -9,7 +9,7 @@ https://react-test-globacap.herokuapp.com/
 
 We would especially like to see your approach to coding, use of any stylesheet languages such as Sass or LESS, or anything else you think is relevant.
 
-This test should take up to 2 hours.
+This test should take around 2 hours.
 
 Application entities:
 ------------------------------------
