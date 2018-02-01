@@ -42,6 +42,26 @@ GET    /login(.:format)
 </code>
 </pre>
 
+Fields:
+-------
+These are the mandatory fields for creating the books:
+
+<pre>
+<code>
+  string "title"
+  string "author"
+  string "isbn"
+  bigint "bookshelf_id"
+</code>
+</pre>
+
+These are the mandatory fields for creating the bookshelf:
+<pre>
+<code>
+  string "title"
+</code>
+</pre>
+
 Authentication:
 ---------------
 Each of the above API endpoints require a token for authenticating the current user.
