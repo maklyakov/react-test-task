@@ -20,25 +20,23 @@ Application entities:
 
 API endpoints:
 --------------------------
+Note:
+All the endpoint follow the restfull route structure:
 <pre>
 <code>
-GET    /books(.:format)
-POST   /books(.:format)
-GET    /books/new(.:format)
-GET    /books/:id/edit(.:format)
-GET    /books/:id(.:format)
-PATCH  /books/:id(.:format)
-PUT    /books/:id(.:format)
-DELETE /books/:id(.:format)
-GET    /bookshelves(.:format)
-POST   /bookshelves(.:format)
-GET    /bookshelves/new(.:format)
-GET    /bookshelves/:id/edit(.:format)
-GET    /bookshelves/:id(.:format)
-PATCH  /bookshelves/:id(.:format)
-PUT    /bookshelves/:id(.:format)
-DELETE /bookshelves/:id(.:format)
-GET    /login(.:format)
+GET    /books.json - Retrieve all the books.
+POST   /books.json - Create a book
+GET    /books/:id.json - Retrieve one book based on id.
+PATCH  /books/:id.json - Edit a book based on its id.
+PUT    /books/:id.json - Edit a book based on its id.
+DELETE /books/:id.json - Delete a book based on id.
+GET    /bookshelves.json
+POST   /bookshelves.json
+GET    /bookshelves/:id.json
+PATCH  /bookshelves/:id.json
+PUT    /bookshelves/:id.json
+DELETE /bookshelves/:id.json
+GET    /login.json
 </code>
 </pre>
 
@@ -71,14 +69,28 @@ Login:
 curl --request GET \
      --header "Content-Type: application/json" \
      --data-binary "{ \"user\": \"ReactTestGlobacap\", \"password\": \"ReactTestGlobacap123\"}" \
-'http://localhost:3000/login'
+'https://react-test-globacap.herokuapp.com/login.json'
 </code>
 </pre>
 
 Creating a bookshelf:
 <pre>
 <code>
-curl --request POST      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"New Bookshelf\" }" 'http://localhost:3000/bookshelves.json'
+curl --request POST      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"New Bookshelf\" }" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
+</code>
+</pre>
+
+Retrieving all the bookshelves:
+<pre>
+<code>
+curl --request GET --header "Content-Type: application/json" --data-binary "{ \"token\": "123123123123" }" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
+</code>
+</pre>
+
+Updating a bookshelf based on its id:
+<pre>
+<code>
+curl --request PUT      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"Xxx\" }" 'https://react-test-globacap.herokuapp.com/bookshelves/2.json'
 </code>
 </pre>
 
