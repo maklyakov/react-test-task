@@ -3,6 +3,7 @@ class BookshelvesController < ApplicationController
 
   before_action :authorize_the_api
   before_action :set_bookshelf, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   # GET /bookshelves
   # GET /bookshelves.json

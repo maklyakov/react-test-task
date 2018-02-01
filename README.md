@@ -62,6 +62,27 @@ These are the mandatory fields for creating the bookshelf:
 </code>
 </pre>
 
+Example of calls:
+-----------------
+
+Login:
+<pre>
+<code>
+curl --request GET \
+     --header "Content-Type: application/json" \
+     --data-binary "{ \"user\": \"ReactTestGlobacap\", \"password\": \"ReactTestGlobacap123\"}" \
+'http://localhost:3000/login'
+</code>
+</pre>
+
+Creating a bookshelf:
+<pre>
+<code>
+curl --request POST      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"New Bookshelf\" }" 'http://localhost:3000/bookshelves.json'
+</code>
+</pre>
+
+
 Authentication:
 ---------------
 Each of the above API endpoints require a token for authenticating the current user.

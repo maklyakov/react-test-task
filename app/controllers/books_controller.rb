@@ -3,6 +3,7 @@ class BooksController < ApplicationController
 
   before_action :authorize_the_api
   before_action :set_book, only: [:show, :edit, :update, :destroy]
+  skip_before_action :verify_authenticity_token
 
   # GET /books
   # GET /books.json

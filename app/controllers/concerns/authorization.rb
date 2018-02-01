@@ -7,7 +7,7 @@ module Authorization
 
   def authorize_the_api
     if params[:format] == 'json'
-      if params[:token] != authorization_token
+      if params[:token].to_s != authorization_token
         render status: 401, json: { message: 'This action must be authorized.'}
         return false
       end
