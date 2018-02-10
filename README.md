@@ -76,24 +76,30 @@ curl --request GET \
 Creating a bookshelf:
 <pre>
 <code>
-curl --request POST      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"New Bookshelf\" }" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
+curl -X POST --header "Content-Type: application/json" --header "X-Auth-Token: 123123123123" --data-binary "{ \"bookshelf\":{\"title\": \"New Bookshelf\" }}" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
 </code>
 </pre>
 
 Retrieving all the bookshelves:
 <pre>
 <code>
-curl --request GET --header "Content-Type: application/json" --data-binary "{ \"token\": "123123123123" }" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
+curl -X GET --header "Content-Type: application/json" --header "X-Auth-Token: 123123123123" 'https://react-test-globacap.herokuapp.com/bookshelves.json'
 </code>
 </pre>
 
 Updating a bookshelf based on its id:
 <pre>
 <code>
-curl --request PUT      --header "Content-Type: application/json"      --data-binary "{ \"token\": "123123123123",\"title\": \"Xxx\" }" 'https://react-test-globacap.herokuapp.com/bookshelves/2.json'
+curl -X PUT --header "Content-Type: application/json" --header "X-Auth-Token: 123123123123" --data-binary "{ \"bookshelf\":{\"title\": \"Nnew Bookshelff\" }}" 'https://react-test-globacap.herokuapp.com/bookshelves/2.json'
 </code>
 </pre>
 
+Delete a bookshelf based on its id:
+<pre>
+<code>
+curl -X DELETE --header "X-Auth-Token: 123123123123" 'http://localhost:3000/bookshelves/2.json'
+</code>
+</pre>
 
 Authentication:
 ---------------
