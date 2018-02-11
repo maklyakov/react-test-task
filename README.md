@@ -94,7 +94,7 @@ curl -X PUT --header "Content-Type: application/json" --header "X-Auth-Token: 12
 Delete a bookshelf based on its id:
 <pre>
 <code>
-curl -X DELETE --header "X-Auth-Token: 123123123123" 'http://localhost:3000/bookshelves/2.json'
+→ curl -X DELETE --header "X-Auth-Token: 123123123123" 'https://react-test-globacap.herokuapp.com/bookshelves/1.json'
 </code>
 </pre>
 
