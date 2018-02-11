@@ -4,7 +4,7 @@ Objective:
 ----------
 Create a front-end CRUD application to manage books on a bookshelf, using this application as the back-end.
 
-The application is deployed, wth the API endpoints ready to access at the following base URL:
+The application is deployed, the API endpoints ready to access at the following base URL:
 https://react-test-globacap.herokuapp.com/
 
 We would especially like to see your approach to coding, use of any stylesheet languages such as Sass or LESS, or anything else you think is relevant.
@@ -66,10 +66,7 @@ Example of calls:
 Login:
 <pre>
 <code>
-curl --request GET \
-     --header "Content-Type: application/json" \
-     --data-binary "{ \"user\": \"ReactTestGlobacap\", \"password\": \"ReactTestGlobacap123\"}" \
-'https://react-test-globacap.herokuapp.com/login.json'
+curl -X GET 'https://react-test-globacap.herokuapp.com/login.json?user=ReactTestGlobacap&password=ReactTestGlobacap123'
 </code>
 </pre>
 
