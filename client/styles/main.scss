@@ -1,0 +1,7 @@
+$bootstrap-sass-asset-helper: 'true';
+
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+@import 'pages/bookshelves-page';
+
+@import 'components/bookshelf-item';
