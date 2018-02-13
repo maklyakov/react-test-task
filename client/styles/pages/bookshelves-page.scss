@@ -6,4 +6,12 @@
       padding: $padding-base-vertical;
     }
   }
+
+  .actions {
+    margin-top: $padding-base-vertical;
+
+    > button {
+      margin-right: $padding-base-vertical;
+    }
+  }
 }
