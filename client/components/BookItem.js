@@ -25,7 +25,7 @@ class BookshelfItem extends Component {
         <td>{this.props.author}</td>
         <td>{this.props.isbn}</td>
         <td>
-          <button className="btn btn-danger">Delete</button>
+          <button className="btn btn-danger" onClick={() => this.props.onDelete(this.props.id)}>Delete</button>
         </td>
       </tr>
     );

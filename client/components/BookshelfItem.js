@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { Modal } from 'react-bootstrap';
 
 import BookshelfModal from './BookshelfModal';
@@ -11,6 +10,7 @@ class BookshelfItem extends Component {
     title: PropTypes.string,
     onDelete: PropTypes.func,
     onUpdate: PropTypes.func,
+    onBookDelete: PropTypes.func,
     books: PropTypes.array
   };
 
@@ -19,6 +19,7 @@ class BookshelfItem extends Component {
     title: '',
     onDelete: () => {},
     onUpdate: () => {},
+    onBookDelete: () => {},
     books: []
   };
 
@@ -39,6 +40,11 @@ class BookshelfItem extends Component {
   handleUpdate() {
     this.setState({ editModalIsOpen: false });
     this.props.onUpdate(this.props.id, this.state.title);
+  }
+
+  handleBookDelete(id) {
+    this.setState({ showModalIsOpen: false });
+    this.props.onBookDelete(id);
   }
 
   render() {
@@ -69,7 +75,8 @@ class BookshelfItem extends Component {
           </Modal>
           <BookshelfModal show={this.state.showModalIsOpen}
                           onHide={() => this.setState({ showModalIsOpen: false })}
-                          id={this.props.id} title={this.props.title} books={this.props.books} />
+                          id={this.props.id} title={this.props.title} books={this.props.books}
+                          onDelete={id => this.handleBookDelete(id)} />
         </tr>
     );
   }

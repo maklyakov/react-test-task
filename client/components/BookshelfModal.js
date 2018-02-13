@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { Modal } from 'react-bootstrap';
 
 import BookItem from './BookItem';
@@ -11,7 +10,9 @@ class BookshelfItem extends Component {
     title: PropTypes.string,
     books: PropTypes.array,
     show: PropTypes.bool,
-    onHide: PropTypes.func
+    onHide: PropTypes.func,
+    onDelete: PropTypes.func,
+    onUpdate: PropTypes.func
   };
 
   static defaultProps = {
@@ -19,9 +20,10 @@ class BookshelfItem extends Component {
     title: '',
     books: [],
     show: false,
-    onHide: () => {
-    }
+    onHide: () => {},
+    onDelete: () => {}
   };
+
 
   render() {
     return (
@@ -45,7 +47,8 @@ class BookshelfItem extends Component {
             </thead>
             <tbody>
             {
-              this.props.books.map(item => <BookItem key={item.id} {...item} />)
+              this.props.books.map(item => <BookItem key={item.id} {...item}
+                                                     onDelete={id => this.props.onDelete(id)} />)
             }
             </tbody>
           </table>
