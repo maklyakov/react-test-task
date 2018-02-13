@@ -16,9 +16,13 @@ class BookshelfItem extends Component {
 
   render() {
     return (
-        <div className="bookshelf-item">
-
-        </div>
+        <tr className="bookshelf-item">
+          <td>{this.props.title}</td>
+          <td>
+            <button className="btn btn-default">Edit</button>
+            <button className="btn btn-default">Delete</button>
+          </td>
+        </tr>
     );
   }
 }
